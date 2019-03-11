@@ -15,7 +15,7 @@ AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
 ### Sample Output
 20 12 17 21s
 
-## Requirements
+### Requirements
 
 Install assignment dependencies:
 
@@ -23,7 +23,7 @@ Install assignment dependencies:
 $ npm install
 ```
 
-## Making the test suite pass
+### Making the test suite pass
 
 Execute the tests with:
 
