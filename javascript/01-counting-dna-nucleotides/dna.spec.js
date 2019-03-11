@@ -1,4 +1,4 @@
-import { nucleotideCount } from './counting-dna-nucleotides';
+import { nucleotideCount } from './dna';
 
 describe('nucleotideCount()', () => {
   test('A = 1 0 0 0', () => {
