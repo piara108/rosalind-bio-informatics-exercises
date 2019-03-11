@@ -1,7 +1,7 @@
 // Exercise Name:   Counting DNA Nucleotides
 // Exercise Number: 01
 
-var nucleotideCount = (strandDNA) => {
+export const nucleotideCount = (strandDNA) => {
   let count = { 'A': 0, 'C': 0, 'G': 0, 'T': 0 };
 
   strandDNA.split('').map(function(nt) { count[nt] += 1; });
