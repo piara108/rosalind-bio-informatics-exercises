@@ -13,7 +13,7 @@ Return: Four integers (separated by spaces) counting the respective number of ti
 AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
 
 ## Sample Output
-20 12 17 21s
+20 12 17 21
 
 ## Requirements
 
