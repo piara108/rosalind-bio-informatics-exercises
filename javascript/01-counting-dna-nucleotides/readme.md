@@ -17,7 +17,7 @@ AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
 
 ### Requirements
 
-Install assignment dependencies:
+Install necessary dependencies:
 
 ```bash
 $ npm install
@@ -25,13 +25,10 @@ $ npm install
 
 ### Making the test suite pass
 
-Execute the tests with:
+Run the test suite w/:
 
 ```bash
 $ npm test
 ```
 
-In the test suites all tests but the first have been skipped.
-
-Once you get a test passing, you can enable the next one by
-changing `xtest` to `test`.
+Delete the the x in `xtest` in order to run the test.
