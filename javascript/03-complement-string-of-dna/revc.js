@@ -2,7 +2,7 @@
 // Number:    03
 
 export const convertDNA = (strandDNA = undefined) => {
-  let strandRNA = '';
+  let strandRNA = [];
   const pair = {
     'A': 'T',
     'C': 'G',
@@ -11,8 +11,10 @@ export const convertDNA = (strandDNA = undefined) => {
   };
 
   strandDNA.split('').map(function(nt) {
-    strandRNA += pair[nt];
+    strandRNA.push(pair[nt]);
   });
 
-  return strandRNA.reverse();
+  return strandRNA.reverse().join('');
 }
+
+convertDNA('ATGCCGTAATCGTAGCTAGGCC');
