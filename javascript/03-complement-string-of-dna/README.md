@@ -1,4 +1,4 @@
-# Readme Template
+# Complementing a String of DNA
 
 ## Problem
 
@@ -26,7 +26,7 @@ Install necessary dependencies:
 $ npm install
 ```
 
-## Making the test suite pass
+## Making the Test Suite Pass
 
 Run the Test Suite using:
 
