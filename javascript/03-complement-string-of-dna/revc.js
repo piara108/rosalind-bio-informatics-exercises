@@ -16,5 +16,3 @@ export const convertDNA = (strandDNA = undefined) => {
 
   return strandRNA.reverse().join('');
 }
-
-convertDNA('ATGCCGTAATCGTAGCTAGGCC');
