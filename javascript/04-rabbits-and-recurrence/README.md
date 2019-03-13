@@ -1,4 +1,4 @@
-# Readme Template
+# Rabbits and Recurrence Relations
 
 ## Problem
 
