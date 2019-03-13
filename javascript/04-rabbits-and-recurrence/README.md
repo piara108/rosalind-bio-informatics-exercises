@@ -4,9 +4,6 @@
 
 ### Wascally Wabbits
 
-Figure 1. The growth of Fibonacci's rabbit population for the first six months.
-
-Figure 2. Erosion at Lake Mungo in New South Wales, which was initiated by European rabbits in the 19th Century. Courtesy Pierre Pouliquin.
 In 1202, Leonardo of Pisa (commonly known as Fibonacci) considered a mathematical exercise regarding the reproduction of a population of rabbits. He made the following simplifying assumptions about the population:
 
 The population begins in the first month with a pair of newborn rabbits.
