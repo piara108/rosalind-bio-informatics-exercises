@@ -1,7 +1,7 @@
 {
   "name": "rosalind-bio-informatics-javascript",
   "version": "0.0.0",
-  "description": "Rosalind bio-informatics exercises in Javascript.",
+  "description": "Rosalind bio-informatics exercise solutions and test suites in ES.",
   "author": "Piara Sandhu",
   "private": true,
   "repository": {
