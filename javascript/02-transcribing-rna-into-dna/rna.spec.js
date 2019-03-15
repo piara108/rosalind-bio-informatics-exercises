@@ -5,19 +5,19 @@ describe('toRNA()', () => {
     expect(toRNA('')).toEqual('');
   });
 
-  test('T', () => {
+  xtest('T', () => {
     expect(toRNA('T')).toEqual('U')
   });
 
-  test('ACGT', () => {
+  xtest('ACGT', () => {
     expect(toRNA('ACGT')).toEqual('ACGU');
   });
 
-  test('GATGGAACTTGACTAAA', () => {
+  xtest('GATGGAACTTGACTAAA', () => {
     expect(toRNA('GATGGAACTTGACTAAA')).toEqual('GAUGGAACUUGACUAAA');
   });
 
-  test('TCGATGCGCTACGATCC', () => {
+  xtest('TCGATGCGCTACGATCC', () => {
     expect(toRNA('TCGATGCGCTACGATCC')).toEqual('UCGAUGCGCUACGAUCC');
   });
 });
