@@ -5,17 +5,13 @@ A string is simply an ordered collection of symbols selected from some alphabet 
 
 An example of a length 21 DNA string (whose alphabet contains the symbols 'A', 'C', 'G', and 'T') is "ATGCTTCAGAAAGGTCTTACG."
 
-Given: A DNA string, s, of length at most 1000 nt.
+###### Given:
+A DNA string, *s*, of length at most 1000 nt.
 
-Return: Four integers (separated by spaces) counting the respective number of times that the symbols 'A', 'C', 'G', and 'T' occur in s.
+###### Return:
+Four integers (separated by spaces) counting the respective number of times that the symbols 'A', 'C', 'G', and 'T' occur in *s*.
 
 ## Data Set
-<<<<<<< HEAD
-AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
-
-## Sample Output
-20 12 17 21
-=======
 ```
 AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
 ```
@@ -24,30 +20,22 @@ AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
 ```
 20 12 17 21
 ```
->>>>>>> 01-test-suite
 
 ## Requirements
-
 Install necessary dependencies:
 
 ```bash
 $ npm install
 ```
 
-<<<<<<< HEAD
-## Making the test suite pass
-=======
 ## Making the Test Suite Pass
->>>>>>> 01-test-suite
-
 Run the Test Suite using:
 
 ```bash
 $ npm test
 ```
 
-Delete the the x in `xtest` in order to run the test.
+Delete the x in `xtest` in order to run the test.
 
 ## Source
-
 [rosalind.info](http://rosalind.info/problems/dna/)
