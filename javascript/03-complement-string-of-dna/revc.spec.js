@@ -5,19 +5,19 @@ describe('convertDNA()', () => {
     expect(convertDNA('')).toEqual('');
   });
 
-  test('AG', () => {
+  xtest('AG', () => {
     expect(convertDNA('AG')).toEqual('CT');
   });
 
-  test('AAAACCCGGT', () => {
+  xtest('AAAACCCGGT', () => {
     expect(convertDNA('AAAACCCGGT')).toEqual('ACCGGGTTTT');
   });
 
-  test('AAACCCGGGTTT', () => {
+  xtest('AAACCCGGGTTT', () => {
     expect(convertDNA('AAACCCGGGTTT')).toEqual('AAACCCGGGTTT');
   });
 
-  test('ATGCCGTAATCGTAGCTAGGCC', () => {
+  xtest('ATGCCGTAATCGTAGCTAGGCC', () => {
     expect(convertDNA('ATGCCGTAATCGTAGCTAGGCC')).toEqual('GGCCTAGCTACGATTACGGCAT');
   });
 });
