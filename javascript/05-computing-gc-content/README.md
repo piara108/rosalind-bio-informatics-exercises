@@ -13,7 +13,6 @@ Given: At most 10 [DNA strings](https://en.wikipedia.org/wiki/DNA) in FASTA form
 Return: The ID of the string having the highest GC-content, followed by the GC-content of that string. Rosalind allows for a default error of 0.001 in all decimal answers unless otherwise stated; please see the note on absolute error below.
 
 ## Data Set
-
 ```
 >Rosalind_6404
 CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCC
@@ -27,7 +26,6 @@ TGGGAACCTGCGGGCAGTAGGTGGAAT
 ```
 
 ## Sample Output
-
 ```
 Rosalind_0808
 60.919540
