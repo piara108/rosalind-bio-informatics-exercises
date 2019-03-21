@@ -1,36 +1,35 @@
 // Exercise:  Computing GC Content
 // Number:    05
 
-export const computeGC = (stringDNA = undefined) => {
+export const contentOfGC = (fastaDNA = undefined) => {
   let strandsDNA = [];
-  let countGC = 0;
+  let contentGC = {};
   let labelDNA = {};
-  let ratiosGC = {};
+  let countGC = 0;
+  let ratioGC = 0;
 
-  // Code here to separate FASTA formatted strings into individual DNA
-  // strands w/ correct tag
-  // stringDNA = stringDNA.trim();
-  strandsDNA = stringDNA.split('>');
-  if(strandsDNA[0] === '') strandsDNA.shift();
+  /*  Code here to separate FASTA formatted strings into individual DNA
+      strands w/ correct tag  */
+  // fastaDNA = fastaDNA.trim();
 
-  console.log('-------');
-  strandsDNA.map(function(line) {
-    line = line.trim()
+  // Parses the FASTA format into an object of tag and DNA strand
+  labelDNA = parseFASTA(fastaDNA);
 
-    let splitTag = line.substring(0, line.indexOf('\n'));
-    line = line.replace(splitTag, '');
-    let splitLine = line.replace(/\r?\n|\r/g, '');
+  for(let tag in labelDNA) {
+    // console.log(`${tag}: ${labelDNA[tag]}`);
+    contentGC[tag] = calculateGC(labelDNA[tag]);
+  }
 
-    console.log(splitLine);
-    // console.log(splitTag);
-    // console.log(line);
-    console.log('-------');
-  });
+  for(let str in contentGC) {
+    console.log(`${str}:  ${contentGC[str]}`);
+  }
 
-
+  // labelDNA.map(function(tag, dna) {
+  //   console.log(`${tag}: ${dna}`);
+  // });
 
   // console.log('-------');
-  // stringDNA.split('').map(function(nt) {
+  // fastaDNA.split('').map(function(nt) {
   //   let start = '';
   //   let end = ''
   //   // console.log(nt);
@@ -39,22 +38,64 @@ export const computeGC = (stringDNA = undefined) => {
   //
   //   }
   // });
-  // strandsDNA = stringDNA.split('\n');
+  // strandsDNA = fastaDNA.split('\n');
 
   // console.log(strandsDNA.length);
 
-  stringDNA.split('').map(function(nt) {
-    if(nt === 'G' || nt === 'C') {
-      countGC++;
-    }
-  });
+  // fastaDNA.split('').map(function(nt) {
+  //   if(nt === 'G' || nt === 'C') {
+  //     countGC++;
+  //   }
+  // });
 
-  let ratioGC = countGC / stringDNA.length;
+  // let ratioGC = countGC / fastaDNA.length;
 
   // console.log('GC Ratio: ' + countGC);
 
   return ratioGC;
 }
+
+const parseFASTA = (stringInFASTA) => {
+  let labelDNA = {};
+  let strandsDNA = stringInFASTA.split('>');
+
+  if(strandsDNA[0] === '') strandsDNA.shift();
+
+  // console.log('-------');
+  strandsDNA.map(function(line) {
+    line = line.trim()
+
+    let tag = line.substring(0, line.indexOf('\n'));
+    line = line.replace(tag, '');
+    let strandDNA = line.replace(/\r?\n|\r/g, '');
+    labelDNA[tag] = strandDNA;
+
+    // console.log(strandDNA);
+    // console.log(tag);
+    // console.log(line);
+    // console.log('-------');
+  });
+
+  return labelDNA;
+};
+
+const calculateGC = (strandDNA) => {
+  let amountGC = 0;
+  // let ratioGC = 0;
+
+  strandDNA.split('').map(function(nt) {
+    if(nt === 'G' || nt === 'C') amountGC++;
+  });
+
+  let ratioGC = amountGC / strandDNA.length;
+
+  // console.log(`G & C:     ${amountGC}`);
+  console.log(`GC Ratio:  ${ratioGC}`);
+
+  return ratioGC;
+};
+
+// ====================== Driver Code ======================
 
 const fastaString = `>Rosalind_6404
 CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCC
@@ -67,4 +108,4 @@ CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGCCCGGAC
 TGGGAACCTGCGGGCAGTAGGTGGAAT`;
 
 // computeGC('ATGC');        => .5
-computeGC(fastaString);
+contentOfGC(fastaString);
