@@ -1,7 +1,7 @@
-import { computeGC } from './gc';
+import { contentOfGC } from './gc';
 
-describe('computeGC()', () => {
+describe('contentGC()', () => {
   test('ATGC', () => {
-    expect(computeGC('ATCG')).toEqual(.5);
+    expect(contentOfGC('ATCG')).toEqual(.5);
   });
 });
