@@ -1,0 +1,17 @@
+// Exercise Name:   Counting Point Mutations
+// Exercise Number: 06
+
+export const distanceHamming = (strandDNA1, strandDNA2) => {
+  let dist = 0;
+
+  for(var x = 0; x < strandDNA1.length; x++) {
+    if(strandDNA1[x] !== strandDNA2[x]) dist++;
+  }
+
+  return dist++
+};
+
+const strandDNA1 = 'GAGCCTACTAACGGGAT';
+const strandDNA2 = 'CATCGTAATGACGGCCT';
+
+console.log(distanceHamming(strandDNA1, strandDNA2));
