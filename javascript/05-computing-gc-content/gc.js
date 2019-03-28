@@ -29,24 +29,19 @@ const parseFASTA = (stringInFASTA) => {
   let strandsDNA = stringInFASTA.split('>');
   let labelDNA = {};
 
-
-  if(strandsDNA === '') strandsDNA.shift();
-
   strandsDNA.map(function(line) {
     let tag = line.trim().substring(0, line.indexOf('\n'));
     line = line.replace(tag, '');
     let strandDNA = line.replace(/\r?\n|\r/g, '');
 
-    labelDNA[tag] = strandDNA;
+    if(tag !== '') labelDNA[tag] = strandDNA;
+
   });
 
-  // strandsDNA.map(function(tag) {
-  //   if(tag === '') strandsDNA.shift();
-  //   console.log(tag);
-  // });
+  // console.log(labelDNA);
 
   let objectLength = Object.getOwnPropertyNames(labelDNA);
-  console.log(`Object Size: ${objectLength.length}`);
+  // console.log(`Object Size: ${objectLength.length}`);
 
   return labelDNA;
 };
@@ -56,11 +51,15 @@ const parseFASTA = (stringInFASTA) => {
 const calculateGCRatio = (strandDNA) => {
   let amountGC = 0;
 
+  // console.log(strandDNA);
+  // console.log('====================================');
+  const strandLength = strandDNA.length;
+
   strandDNA.split('').map(function(nt) {
-    if(nt === 'G' || nt === 'C') amountGC++;
+    if(nt === 'G' || nt === 'C') amountGC += 1;
   });
 
-  return (amountGC / strandDNA.length) * 100;
+  return (amountGC / strandLength) * 100;
 };
 
 // ====================== Driver Code ======================
@@ -80,7 +79,7 @@ contentOfGC(fastaTest1);
 // console.log(contentOfGC(fastaTest1));
 
 // let dnaString = contentOfGC(fastaTest1);
-//
+// //
 // if(dnaString === 'Rosalind_0808\n60.91954022988506') {
 //   console.log('Yaaay, c\'est vrai!');
 // }
