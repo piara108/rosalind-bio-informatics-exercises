@@ -23,7 +23,6 @@ describe('Hamming', () => {
   const strandDNA13 = '';
   const strandDNA14 = '';
 
-
   test(`${strandDNA01} & ${strandDNA02}`, () => {
     expect(distanceHamming(strandDNA01, strandDNA02)).toEqual(0);
   });
