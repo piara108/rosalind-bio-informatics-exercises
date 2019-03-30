@@ -8,3 +8,4 @@ These exercises have been created and submitted by various users from [Rosalind.
 - [03 Complement String of DNA](https://github.com/cargoCult108/rosalind-bio-informatics-exercises/tree/master/javascript/03-complement-string-of-dna)
 - [04 Rabbits and Recurrence](https://github.com/cargoCult108/rosalind-bio-informatics-exercises/tree/master/javascript/04-rabbits-and-recurrence)
 - [05 Computing GC Content](https://github.com/cargoCult108/rosalind-bio-informatics-exercises/tree/master/javascript/05-computing-gc-content)
+- [06 Counting Point Mutations](https://github.com/piara108/rosalind-bio-informatics-exercises/tree/master/javascript/06-counting-point-mutations)
