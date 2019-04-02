@@ -1,7 +1,7 @@
-,// Exercise Name:   Translating RNA into Protein
+// Exercise Name:   Translating RNA into Protein
 // Exercise Number: 08
 
-const const = {
+const aminoAcids = {
   'GCA': 'A', 'GCC': 'A', 'GCG': 'A', 'GCU': 'A',
   'UGC': 'C', 'UGU': 'C',
   'GAU': 'D', 'GAC': 'D',
@@ -22,13 +22,41 @@ const const = {
   'UGG': 'W',
   'GUU': 'V', 'GUC': 'V', 'GUA': 'V', 'GUG': 'V',
   'UAU': 'Y', 'UAC': 'Y',
-  'UAA': 'Stop', 'UAG': 'Stop', 'UGA': 'Stop'
+  'UAA': 'STOP', 'UAG': 'STOP', 'UGA': 'STOP'
 }
 
 export const translateRNA = (strandRNA) => {
   let protein = '';
 
-  strandRNA.split('').map(function(nt) {
+  strandRNA.match(/.{1,3}/g).map(function(nt) {
+    console.log('RNA: ' + nt);
+    for(let amino in aminoAcids) {
+      let letter = aminoAcids[amino];
 
+      // console.log('Amino: ' + amino);
+      // console.log(letter);
+
+      if(letter === 'STOP') {
+        // console.log(letter);
+        // protein += '';
+        // console.log("Break ");
+        return protein;
+      }
+      else if(amino === nt) {
+        protein += letter;
+      }
+    }
   });
+
+  return protein;
 };
+
+// ============================== Driver Code ==============================
+
+// console.log(translateRNA('GCGAACGCACUC'));
+
+console.log(translateRNA('AUGGCCAUGGCGUGAAUGGCCAUGGCG'));
+// => MAMA
+
+
+// console.log(translateRNA('CCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA'));
