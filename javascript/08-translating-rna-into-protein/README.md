@@ -5,9 +5,9 @@ The 20 commonly occurring amino acids are abbreviated by using 20 letters from t
 
 The **[RNA codon table](https://en.wikipedia.org/wiki/Genetic_code#RNA_codon_table)** dictates the details regarding the encoding of specific codons into the amino acid alphabet.
 
-|: **Given:** An [RNA string](https://en.wikipedia.org/wiki/RNA) *s* corresponding to a strand of mRNA (of length at most 10 [kbp](https://en.wikipedia.org/wiki/Base_pair#Length_measurements).
+    **Given:** An [RNA string](https://en.wikipedia.org/wiki/RNA) *s* corresponding to a strand of mRNA (of length at most 10 [kbp](https://en.wikipedia.org/wiki/Base_pair#Length_measurements).
 
-|: **Return:** The protein string encoded by *s*.
+    **Return:** The protein string encoded by *s*.
 
 ## Data Set
 ```
