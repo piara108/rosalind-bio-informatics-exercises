@@ -26,20 +26,18 @@ const aminoAcids = {
 }
 
 export const translateRNA = (strandRNA) => {
+  const strandLength = strandRNA.length;
   let protein = '';
 
+  if(strandLength >= 0 && strandLength <= 2) {
+    throw new Error('Must contain at least 3 nucleotides.');
+  }
+
   strandRNA.match(/.{1,3}/g).map(function(nt) {
-    console.log('RNA: ' + nt);
     for(let amino in aminoAcids) {
       let letter = aminoAcids[amino];
 
-      // console.log('Amino: ' + amino);
-      // console.log(letter);
-
       if(letter === 'STOP') {
-        // console.log(letter);
-        // protein += '';
-        // console.log("Break ");
         return protein;
       }
       else if(amino === nt) {
@@ -50,13 +48,3 @@ export const translateRNA = (strandRNA) => {
 
   return protein;
 };
-
-// ============================== Driver Code ==============================
-
-// console.log(translateRNA('GCGAACGCACUC'));
-
-console.log(translateRNA('AUGGCCAUGGCGUGAAUGGCCAUGGCG'));
-// => MAMA
-
-
-// console.log(translateRNA('CCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA'));
