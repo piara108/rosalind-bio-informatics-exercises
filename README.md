@@ -1,6 +1,6 @@
 # Rosalind Bio-Informatics Exercises
 
-These exercises have been created and submitted by various users from [Rosalind.info](http://rosalind.info/problems/locations/). I just solved the exercises and I also wrote my own test suites for each exercises as a way to learn how JS/ES6 testing suites work and how to write them.
+These exercises have been created and submitted by various users from [Rosalind.info](http://rosalind.info/problems/locations/). The solutions to these exercises and the test suites are my own in order to learn JS/ES6 and test-driven development.
 
 ## List of Exercises
 - [01 Counting DNA Nucleotides](https://github.com/cargoCult108/rosalind-bio-informatics-exercises/tree/master/javascript/01-counting-dna-nucleotides)
