@@ -1,3 +1,5 @@
+# Finding a Motif in DNA
+
 ## Problem
 
 Given two [strings](https://en.wikipedia.org/wiki/String_(computer_science)) *s* and *t*, *t* is a substring of *s* if *t* is contained as a contiguous collection of symbols in *s* (as a result, *t* must be no longer than *s*).
@@ -41,4 +43,4 @@ Delete the the x in `xtest` in order to run the test.
 
 ## Source
 
-[rosalind.info](http://rosalind.info/problems/subs/)
+[Finding a Motif in DNA](http://rosalind.info/problems/subs/)

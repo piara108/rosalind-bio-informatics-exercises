@@ -1,8 +1,6 @@
-# Readme Template
+# Rabbits and Recurrence Relations
 
 ## Problem
-
-### Wascally Wabbits
 
 In 1202, Leonardo of Pisa (commonly known as Fibonacci) considered a mathematical exercise regarding the reproduction of a population of rabbits. He made the following simplifying assumptions about the population:
 
@@ -53,4 +51,4 @@ Delete the the x in `xtest` in order to run the test.
 
 ## Source
 
-[rosalind.info](http://rosalind.info/problems/fib/)
+[Rabbits and Recurrence Relations](http://rosalind.info/problems/fib/)

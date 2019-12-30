@@ -36,4 +36,4 @@ $ npm test
 Delete the x in `xtest` in order to run the test.
 
 ## Source
-[rosalind.info](http://rosalind.info/problems/rna/)
+[Transcribing DNA into RNA](http://rosalind.info/problems/rna/)

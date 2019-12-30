@@ -40,4 +40,4 @@ Delete the the x in `xtest` in order to run the test.
 
 ## Source
 
-[rosalind.info](http://rosalind.info/problems//)
+[Complementing a Strand of DNA](http://rosalind.info/problems/revc/)

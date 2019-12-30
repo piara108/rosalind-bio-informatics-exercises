@@ -37,4 +37,4 @@ Delete the the x in `xtest` in order to run the test.
 
 ## Source
 
-[rosalind.info](http://rosalind.info/problems/hamm/)
+[Counting Point Mutations](http://rosalind.info/problems/hamm/)
