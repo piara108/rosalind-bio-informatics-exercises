@@ -28,7 +28,7 @@ A consensus string c is a string of length n formed from our collection by takin
                                Consensus	A T G C A A C T
 
 
-**Given:** A collection of at most 10 [10 DNA strings](https://en.wikipedia.org/wiki/DNA) of equal length (at most 1 [kbp](https://en.wikipedia.org/wiki/Base_pair#Length_measurements) in [FASTA format](https://en.wikipedia.org/wiki/FASTA_format).
+**Given:** A collection of at most 10 [10 DNA strings](https://en.wikipedia.org/wiki/DNA) of equal length (at most 1 [kbp](https://en.wikipedia.org/wiki/Base_pair#Length_measurements)) in [FASTA format](https://en.wikipedia.org/wiki/FASTA_format).
 
 **Return:** A consensus string and profile matrix for the collection. (If several possible consensus strings exist, then you may return any one of them.)
 
