@@ -16,16 +16,16 @@ A [consensus string](https://en.wikipedia.org/wiki/Consensus_sequence) *c* is a 
                                     A T G C C A T T
                                     A T G G C A C T
 
-                                  -------------------                            
-                                      Profile
-                                  A   5 1 0 0 5 5 0 0
-                                  C   0 0 1 4 2 0 6 1
-                                  G   1 1 6 3 0 1 0 0
-                                  T   1 5 0 0 0 1 1 6
+                                ---------------------                            
+                                         Profile
+                                A    5 1 0 0 5 5 0 0
+                                C    0 0 1 4 2 0 6 1
+                                G    1 1 6 3 0 1 0 0
+                                T    1 5 0 0 0 1 1 6
 
-                               --------------------------
+                             ----------------------------
 
-                               Consensus	A T G C A A C T
+                              Consensus	A T G C A A C T
 
 
 **Given:** A collection of at most 10 [10 DNA strings](https://en.wikipedia.org/wiki/DNA) of equal length (at most 1 [kbp](https://en.wikipedia.org/wiki/Base_pair#Length_measurements)) in [FASTA format](https://en.wikipedia.org/wiki/FASTA_format).
