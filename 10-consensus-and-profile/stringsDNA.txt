@@ -1,0 +1,14 @@
+>strand_1
+ATCCAGCT
+>strand_2
+GGGCAACT
+>strand_3
+ATGGATCT
+>strand_4
+AAGCAACC
+>strand_5
+TTGGAACT
+>strand_6
+ATGCCATT
+>strand_7
+ATGGCACT
