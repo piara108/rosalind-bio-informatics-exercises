@@ -5,8 +5,8 @@ In a weighted alphabet, every symbol is assigned a positive real number called a
 
 The standard weight assigned to each member of the 20-symbol amino acid alphabet is the monoisotopic mass of the corresponding amino acid.
 
-  **Given:** A protein string *P* of length at most 1000 [aa](https://en.wikipedia.org/wiki/Amino_acid).
-  **Return:** The total weight of *P*. Consult the [monoisotopic mass table](https://en.wikipedia.org/wiki/Proteinogenic_amino_acid#Mass_spectrometry).
+**Given:** A protein string *P* of length at most 1000 [aa](https://en.wikipedia.org/wiki/Amino_acid).
+**Return:** The total weight of *P*. Consult the [monoisotopic mass table](https://en.wikipedia.org/wiki/Proteinogenic_amino_acid#Mass_spectrometry).
 
 ## Data Set
 ```
